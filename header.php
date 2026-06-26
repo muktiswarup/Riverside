@@ -59,7 +59,7 @@
                     </div>
                     <div class="right-column">
                         <div class="navbar-right">
-                            <div class="link-btn"><a href="booking-reservation.php" class="theme-btn btn-style-one">Reservation</a></div>
+                                <div class="link-btn"><a href="javascript:void(0)" class="theme-btn btn-style-one header-enquire-btn" onclick="openEnquiryModal()"><span>Enquire Now</span></a></div>
                         </div>
                     </div>                     
                 </div>
