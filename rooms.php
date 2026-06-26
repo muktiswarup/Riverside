@@ -6,7 +6,7 @@
         <div class="popup-inner">
             <div class="overlay-layer"></div>
             <div class="search-form">
-                <form method="post" action="https://html.tonatheme.com/2023/bluebell/index.html">
+                <form method="post" action="">
                     <div class="form-group">
                         <fieldset>
                             <input type="search" class="form-control" name="search-input" value="" placeholder="Search Here" required >
@@ -42,7 +42,7 @@
                 <div class="items-container row">
                     <div class="col-lg-4 room-block-two masonry-item all cat-1">
                         <div class="inner-box">
-                            <div class="image"><img src="assets/images/resource/deluxe.jpeg" alt="">
+                            <div class="image"><img src="assets/images/delux-1.webp" alt="">
                             <div class="text">₹1400 / Night</div>
                             </div>
                             <h3><a href="javascript:void(0)" onclick="openEnquiryModal('Deluxe Room')">Deluxe Room</a> </h3>
@@ -60,7 +60,7 @@
                     </div>
                     <div class="col-lg-4 room-block-two masonry-item all cat-1">
                         <div class="inner-box">
-                            <div class="image"><img src="assets/images/resource/executive ac.jpeg" alt="">
+                            <div class="image"><img src="assets/images/ac-executive.webp" alt="">
                             <div class="text">₹1200 / Night</div>
                             </div>
                             <h3><a href="javascript:void(0)" onclick="openEnquiryModal('Executive AC')">Executive AC Cottage</a> </h3>
@@ -78,7 +78,7 @@
                     </div>
                     <div class="col-lg-4 room-block-two masonry-item all cat-1">
                         <div class="inner-box">
-                            <div class="image"><img src="assets/images/resource/executive.jpeg" alt="">
+                            <div class="image"><img src="assets/images/excutive.webp" alt="">
                             <div class="text">₹950 / Night</div>
                             </div>
                             <h3><a href="javascript:void(0)" onclick="openEnquiryModal('Executive')">Executive</a> </h3>
