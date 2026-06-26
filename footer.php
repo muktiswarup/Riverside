@@ -117,31 +117,39 @@
                     <!--Column-->
                     <div class="column col-lg-3">
                         <div class="widget links-widget">
-                            <h3 class="widget-title">Rooms (Total: 7)</h3>
+                            <h3 class="widget-title">Rooms</h3>
                             <div class="widget-content">
                                 <ul>
-                                    <li>04 Executive Rooms</li>
-                                    <li>02 Deluxe Ac Rooms</li>
-                                    <li>01 Executive Room</li>
+                                    <li><a href="rooms.php">Executive Rooms</a></li>
+                                    <li><a href="rooms.php">Executive AC Rooms</a></li>
+                                    <li><a href="rooms.php">Deluxe Rooms</a></li>
                                 </ul>                                        
                             </div>
                         </div>
                     </div>
                     
                     <!--Column-->
-                    <div class="column col-lg-5">
-                        <div class="widget newsletter-widget">    
-                            <h3 class="widget-title">Sign up for our newsletter to receive <br> special offers, news and events.</h3>                    
+                    <div class="column col-lg-2">
+                        <div class="widget links-widget">    
+                            <h3 class="widget-title">Quick Links</h3>                    
                             <div class="widget-content">
-                                <div class="newsletter-form">
-                                    <form class="ajax-sub-form" method="post">
-                                        <div class="form-group">
-                                            <input type="email" placeholder="Enter your email address" id="subscription-email">
-                                            <button type="submit" class="theme-btn"><i class="fas fa-arrow-right"></i> </button>
-                                            <label class="subscription-label" for="subscription-email"></label>
-                                        </div>
-                                    </form>
-                                </div>
+                                <ul>
+                                    <li><a href="index.php">Home</a></li>
+                                    <li><a href="about.php">About Us</a></li>
+                                    <li><a href="room-grid.php">Rooms</a></li>
+                                    <li><a href="gallery.php">Gallery</a></li>
+                                    <li><a href="contact.php">Contact</a></li>
+                                </ul>                                        
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Column-->
+                    <div class="column col-lg-3">
+                        <div class="widget map-widget">    
+                            <h3 class="widget-title">Location</h3>                    
+                            <div class="widget-content">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119253.97825028045!2d86.80415352601704!3d20.730331006575005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1ba2e3e5bc87b5%3A0xe744e8d0e74f0c43!2sBhitarkanika%20National%20Park!5e0!3m2!1sen!2sin!4v1719391090000!5m2!1sen!2sin" width="100%" height="200" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
                     </div>
