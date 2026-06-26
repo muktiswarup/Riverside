@@ -50,13 +50,13 @@
                     <div class="inner-box">
                         <h4>Riverside</h4>
                         <div class="border-shap"></div>
-                        <div class="text-two">Riverside Resort<br>POC: Mr. Alok Kumar Maharana</div>
+                        <div class="text-two">Riverside Resort</div>
                         <div class="text-three"><a href="mailto:bhitarkanika@sandpebblestours.com">bhitarkanika@sandpebblestours.com</a></div>
                     </div>
                     <div class="icon-box">
                         <h4>Reception Phone No.</h4>
                         <div class="icon"><h5><i class="fas fa-phone"></i><a href="tel:+919937027475">+91 99370 27475</a><br><a href="tel:18003095050">1800 309 5050</a></h5></div>
-                        <div class="text-four">Check in: 01.00 PM <br>Check out: 10.00 PM</div>
+                        <div class="text-four">Availability: 24x7</div>
                     </div>
                 </div>
             </div>

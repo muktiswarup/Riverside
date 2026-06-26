@@ -212,31 +212,31 @@
 
         <div class="row">
             <div class="col-lg-4 room-block">
-                <div class="inner-box">
+                <a href="rooms.php#executive-room" class="inner-box">
                     <div class="image"><img src="assets/images/excutive.webp" alt=""></div>
                     <div class="content">
-                        <h3><a href="rooms.php">Executive Room</a></h3>
+                        <h3>Executive Room</h3>
                         <div class="text-two">Contact for Price</div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col-lg-4 room-block">
-                <div class="inner-box">
+                <a href="rooms.php#deluxe-room" class="inner-box">
                     <div class="image"><img src="assets/images/delux.webp" alt=""></div>
                     <div class="content">
-                        <h3><a href="rooms.php">Deluxe Room</a></h3>
+                        <h3>Deluxe Room</h3>
                         <div class="text-two">Contact for Price</div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col-lg-4 room-block">
-                <div class="inner-box">
+                <a href="rooms.php#executive-ac-cottage" class="inner-box">
                     <div class="image"><img src="assets/images/ac.webp" alt=""></div>
                     <div class="content">
-                        <h3><a href="rooms.php">Executive Ac Cottage</a></h3>
+                        <h3>Executive Ac Cottage</h3>
                         <div class="text-two">Contact for Price</div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </div>

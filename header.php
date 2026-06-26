@@ -73,7 +73,7 @@
                 <div class="auto-container">
                     <div class="inner-container">
                         <!--Logo-->
-                        <div class="logo"><a href="index.php"><img src="assets/images/logo.webp" alt="Riverside Resort" style="max-height: 50px;"></a></div>
+                        <div class="logo"><a href="index.php"><img src="assets/images/logo.webp" alt="Riverside Resort" style="max-height: 80px;"></a></div>
                         <!--Nav Box-->
                         <div class="nav-outer">
                             <!--Mobile Navigation Toggler-->

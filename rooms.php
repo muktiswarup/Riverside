@@ -32,7 +32,7 @@
      <section class="room-grid-section pb-3 light-bg mx-60 border-shape-top border-shape-bottom">
         <div class="auto-container">
             <div class="title-box text-center">
-                <div class="sub-title mb-4">Welcome to Riverside Hotel</div>
+                <div class="sub-title mb-4">Welcome to Riverside Resort</div>
                 <div class="text">Experience luxury and tranquility at Riverside Resort, your gateway to Bhitarkanika National Park. Our accommodations blend traditional hospitality with modern comfort, offering you a memorable stay amidst pristine mangrove forests and the serene riverside of Bhitarkanika.</div>
             </div>
                 
@@ -40,7 +40,7 @@
             <div class="sortable-masonry">
                 
                 <div class="items-container row">
-                    <div class="col-lg-4 room-block-two masonry-item all cat-1">
+                    <div class="col-lg-4 room-block-two masonry-item all cat-1" id="deluxe-room">
                         <div class="inner-box">
                             <div class="image"><img src="assets/images/delux-1.webp" alt="">
                             <div class="text">₹1400 / Night</div>
@@ -58,7 +58,7 @@
                             <div class="link-btn"><a href="javascript:void(0)" class="theme-btn btn-style-one btn-md enquire-btn" data-room-type="Deluxe Room" onclick="openEnquiryModal('Deluxe Room')"><span>Enquire Now</span></a></div>
                         </div>
                     </div>
-                    <div class="col-lg-4 room-block-two masonry-item all cat-1">
+                    <div class="col-lg-4 room-block-two masonry-item all cat-1" id="executive-ac-cottage">
                         <div class="inner-box">
                             <div class="image"><img src="assets/images/ac-executive.webp" alt="">
                             <div class="text">₹1200 / Night</div>
@@ -76,7 +76,7 @@
                             <div class="link-btn"><a href="javascript:void(0)" class="theme-btn btn-style-one btn-md enquire-btn" data-room-type="Executive AC" onclick="openEnquiryModal('Executive AC')"><span>Enquire Now</span></a></div>
                         </div>
                     </div>
-                    <div class="col-lg-4 room-block-two masonry-item all cat-1">
+                    <div class="col-lg-4 room-block-two masonry-item all cat-1" id="executive-room">
                         <div class="inner-box">
                             <div class="image"><img src="assets/images/excutive.webp" alt="">
                             <div class="text">₹950 / Night</div>
