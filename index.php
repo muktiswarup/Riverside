@@ -324,7 +324,6 @@
                             <div class="sub-title">Testimonials</div>
                             <h2 class="sec-title">Clients Review</h2>
                         </div>
-                        <div class="link-btn"><a href="testimonials.php" class="theme-btn btn-style-one"><span>all testimonials</span></a></div>
                         <div class="award" data-parallax='{"y": 20}'>
                             <img src="assets/images/icons/icon-1.png" alt="">
                             <h4>awarded <br> resort</h4>
@@ -402,7 +401,7 @@
     </section>
 
     <!-- news section -->
-    <section class="news-section pt-0 light-bg mx-60 border-shape-bottom">
+    <!-- <section class="news-section pt-0 light-bg mx-60 border-shape-bottom">
         <div class="auto-container">
             <div class="title-box text-center">
                 <div class="sub-title">Tips & receipes</div>
@@ -444,6 +443,6 @@
                 </div>
             </div> 
         </div>
-    </section>
+    </section> -->
 
     <?php include 'footer.php'; ?>

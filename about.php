@@ -28,13 +28,13 @@
                                 <div class="name">Alok Kumar Maharana</div>
                                 <div class="designation">Primary POC</div>
                             </div>
-                            <div class="signature"><img src="assets/images/resource/image-13.png" alt=""></div>
+                            <!-- <div class="signature"><img src="assets/images/resource/image-13.png" alt=""></div> -->
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="text-lg-end">
-                        <div class="image"><img src="assets/images/resource/image-58.jpg" alt=""></div>
+                        <div class="image"><img src="assets/images/about-2.webp" alt=""></div>
                     </div>
                 </div>
             </div>

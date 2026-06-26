@@ -637,3 +637,174 @@
 	});	
 
 })(window.jQuery);
+
+    // ===== ENQUIRY MODAL SYSTEM =====
+    (function() {
+        // Cache DOM elements
+        var overlay = document.getElementById('enquiryOverlay');
+        var modal = document.getElementById('enquiryModal');
+        var closeBtn = document.getElementById('enquiryCloseBtn');
+        var modalBody = document.getElementById('enquiryModalBody');
+        var form = document.getElementById('enquiryForm');
+        var roomTypeInput = document.getElementById('enquiryRoomType');
+
+        // Store original form HTML for reset
+        var originalFormHTML = modalBody.innerHTML;
+
+        // ---- OPEN MODAL ----
+        window.openEnquiryModal = function(roomType) {
+            if (roomTypeInput) {
+                roomTypeInput.value = roomType;
+            }
+            overlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        };
+
+        // ---- CLOSE MODAL ----
+        function closeModal() {
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+            // Reset form after close animation
+            setTimeout(function() {
+                modalBody.innerHTML = originalFormHTML;
+                form = document.getElementById('enquiryForm');
+                roomTypeInput = document.getElementById('enquiryRoomType');
+                bindFormSubmit();
+                initDatePickers();
+            }, 400);
+        }
+
+        // Close button
+        closeBtn.addEventListener('click', closeModal);
+
+        // Click overlay backdrop to close
+        overlay.addEventListener('click', function(e) {
+            if (e.target === overlay) {
+                closeModal();
+            }
+        });
+
+        // ESC key to close
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && overlay.classList.contains('active')) {
+                closeModal();
+            }
+        });
+
+        // Prevent modal clicks from closing
+        modal.addEventListener('click', function(e) {
+            e.stopPropagation();
+        });
+
+        // ---- ENQUIRE BUTTONS ----
+        var enquireBtns = document.querySelectorAll('.enquire-btn');
+        enquireBtns.forEach(function(btn) {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                var roomType = this.getAttribute('data-room-type');
+                window.openEnquiryModal(roomType);
+            });
+        });
+
+        // ---- FORM SUBMISSION ----
+        function bindFormSubmit() {
+            var currentForm = document.getElementById('enquiryForm');
+            if (!currentForm) return;
+
+            currentForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+
+                var name = document.getElementById('enquiryName').value.trim();
+                var email = document.getElementById('enquiryEmail').value.trim();
+                var phone = document.getElementById('enquiryPhone').value.trim();
+                var checkin = document.getElementById('enquiryCheckin').value.trim();
+                var checkout = document.getElementById('enquiryCheckout').value.trim();
+                var guests = document.getElementById('enquiryGuests').value;
+
+                // Highlight empty fields
+                var hasError = false;
+                var fields = [
+                    { id: 'enquiryName', val: name },
+                    { id: 'enquiryEmail', val: email },
+                    { id: 'enquiryPhone', val: phone },
+                    { id: 'enquiryCheckin', val: checkin },
+                    { id: 'enquiryCheckout', val: checkout },
+                    { id: 'enquiryGuests', val: guests }
+                ];
+
+                fields.forEach(function(field) {
+                    var el = document.getElementById(field.id);
+                    if (!field.val) {
+                        el.classList.add('error');
+                        hasError = true;
+                        setTimeout(function() { el.classList.remove('error'); }, 1500);
+                    }
+                });
+
+                if (hasError) return;
+
+                // Email validation
+                var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(email)) {
+                    var emailEl = document.getElementById('enquiryEmail');
+                    emailEl.classList.add('error');
+                    setTimeout(function() { emailEl.classList.remove('error'); }, 2000);
+                    return;
+                }
+
+                // Show success
+                modalBody.innerHTML = '<div class="enquiry-success-state">' +
+                    '<div class="success-circle">' +
+                        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>' +
+                    '</div>' +
+                    '<h3>Enquiry Submitted!</h3>' +
+                    '<p>Thank you for your interest in our ' + (roomTypeInput ? roomTypeInput.value : 'room') + '.<br>Our team will contact you within 24 hours.</p>' +
+                    '<button class="enquiry-success-close" id="successCloseBtn">Close</button>' +
+                '</div>';
+
+                document.getElementById('successCloseBtn').addEventListener('click', closeModal);
+            });
+        }
+
+        // ---- DATE PICKERS ----
+        function initDatePickers() {
+            if (typeof $ === 'undefined' || !$.fn.datepicker) return;
+
+            $('#enquiryCheckin').datepicker({
+                dateFormat: 'dd/mm/yy',
+                minDate: 0,
+                changeMonth: true,
+                changeYear: true,
+                beforeShow: function(input, inst) {
+                    setTimeout(function() {
+                        inst.dpDiv.css('z-index', 100001);
+                    }, 0);
+                }
+            });
+
+            $('#enquiryCheckout').datepicker({
+                dateFormat: 'dd/mm/yy',
+                minDate: 0,
+                changeMonth: true,
+                changeYear: true,
+                beforeShow: function(input, inst) {
+                    setTimeout(function() {
+                        inst.dpDiv.css('z-index', 100001);
+                    }, 0);
+                }
+            });
+
+            $('#enquiryCheckin').on('change', function() {
+                var checkinDate = $(this).datepicker('getDate');
+                if (checkinDate) {
+                    checkinDate.setDate(checkinDate.getDate() + 1);
+                    $('#enquiryCheckout').datepicker('option', 'minDate', checkinDate);
+                }
+            });
+        }
+
+        // Initialize
+        bindFormSubmit();
+        initDatePickers();
+    })();

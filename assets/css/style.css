@@ -9631,7 +9631,532 @@ section.banner-section:before {
     linear-gradient(0deg, rgba(238, 130, 238, 0) 0%, rgba(9, 16, 37, 1) 100%);
 }
 
+    /* ===== CUSTOM MODAL OVERLAY ===== */
+    .enquiry-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.55);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        z-index: 99999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        padding: 20px;
+    }
 
+    .enquiry-overlay.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* ===== MODAL CONTAINER ===== */
+    .enquiry-modal {
+        background: #fff;
+        border-radius: 20px;
+        width: 100%;
+        max-width: 500px;
+        max-height: 90vh;
+        overflow-y: auto;
+        box-shadow:
+            0 30px 80px rgba(0, 0, 0, 0.25),
+            0 0 0 1px rgba(0, 0, 0, 0.04);
+        transform: translateY(40px) scale(0.95);
+        opacity: 0;
+        transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+        position: relative;
+    }
+
+    .enquiry-overlay.active .enquiry-modal {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+
+    /* Custom scrollbar */
+    .enquiry-modal::-webkit-scrollbar {
+        width: 4px;
+    }
+    .enquiry-modal::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    .enquiry-modal::-webkit-scrollbar-thumb {
+        background: rgba(218, 60, 60, 0.2);
+        border-radius: 10px;
+    }
+
+    /* ===== MODAL HEADER ===== */
+    .enquiry-modal-header {
+        background: linear-gradient(135deg, var(--theme-color) 0%, #c62828 100%);
+        padding: 34px 34px 30px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .enquiry-modal-header::before {
+        content: '';
+        position: absolute;
+        top: -40%;
+        right: -25%;
+        width: 220px;
+        height: 220px;
+        background: radial-gradient(circle, rgba(255, 255, 255, 0.13) 0%, transparent 70%);
+        border-radius: 50%;
+        animation: headerFloat 6s ease-in-out infinite;
+    }
+
+    .enquiry-modal-header::after {
+        content: '';
+        position: absolute;
+        bottom: -50%;
+        left: -10%;
+        width: 160px;
+        height: 160px;
+        background: radial-gradient(circle, rgba(255, 255, 255, 0.08) 0%, transparent 70%);
+        border-radius: 50%;
+        animation: headerFloat 8s ease-in-out infinite reverse;
+    }
+
+    @keyframes headerFloat {
+        0%, 100% { transform: translate(0, 0) scale(1); }
+        50% { transform: translate(15px, 10px) scale(1.1); }
+    }
+
+    .enquiry-modal-header .header-content {
+        position: relative;
+        z-index: 2;
+    }
+
+    .enquiry-modal-header .header-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        background: rgba(255, 255, 255, 0.18);
+        border: none;
+        color: #fff;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding: 6px 16px;
+        border-radius: 50px;
+        margin-bottom: 16px;
+        font-family: 'Roboto', sans-serif;
+        backdrop-filter: blur(4px);
+    }
+
+    .enquiry-modal-header .header-badge svg {
+        width: 11px;
+        height: 11px;
+    }
+
+    .enquiry-modal-header h2 {
+        color: #ffffff;
+        font-size: 28px;
+        font-weight: 700;
+        font-family: 'Playfair Display', serif;
+        margin: 0 0 6px 0;
+        line-height: 1.25em;
+    }
+
+    .enquiry-modal-header p {
+        color: rgba(255, 255, 255, 0.75);
+        font-size: 14px;
+        margin: 0;
+        font-family: GlacialIndifference-Regular, sans-serif;
+        line-height: 1.5;
+    }
+
+    /* ===== CLOSE BUTTON ===== */
+    .enquiry-close-btn {
+        position: absolute;
+        top: 18px;
+        right: 18px;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        border: none;
+        background: rgba(255, 255, 255, 0.15);
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        z-index: 10;
+        font-size: 18px;
+        line-height: 1;
+        padding: 0;
+        backdrop-filter: blur(4px);
+    }
+
+    .enquiry-close-btn:hover {
+        background: rgba(255, 255, 255, 0.3);
+        transform: rotate(90deg) scale(1.1);
+    }
+
+    /* ===== MODAL BODY ===== */
+    .enquiry-modal-body {
+        padding: 30px 34px 36px;
+        background: #fff;
+        border-radius: 0 0 20px 20px;
+    }
+
+    /* ===== FORM STYLES ===== */
+    .enquiry-form-group {
+        margin-bottom: 18px;
+        position: relative;
+    }
+
+    .enquiry-form-group label {
+        display: block;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 7px;
+        font-size: 14px;
+        letter-spacing: 0.2px;
+        font-family: GlacialIndifference-Regular, sans-serif;
+    }
+
+    .enquiry-form-group label .label-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 22px;
+        height: 22px;
+        background: linear-gradient(135deg, rgba(218, 60, 60, 0.1), rgba(218, 60, 60, 0.04));
+        border-radius: 6px;
+        margin-right: 8px;
+        vertical-align: middle;
+    }
+
+    .enquiry-form-group label .label-icon svg {
+        width: 11px;
+        height: 11px;
+        color: var(--theme-color);
+    }
+
+    .enquiry-form-input {
+        width: 100%;
+        border: 1.5px solid #e5e7eb;
+        border-radius: 12px;
+        padding: 13px 18px;
+        font-size: 15px;
+        font-family: GlacialIndifference-Regular, sans-serif;
+        color: #222;
+        background: #f9fafb;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        outline: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        box-sizing: border-box;
+        line-height: 1.4;
+    }
+
+    .enquiry-form-input:focus {
+        border-color: var(--theme-color);
+        background: #fff;
+        box-shadow: 0 0 0 4px rgba(218, 60, 60, 0.08);
+        transform: translateY(-1px);
+    }
+
+    .enquiry-form-input::placeholder {
+        color: #adb5bd;
+        font-weight: 400;
+    }
+
+    .enquiry-form-input[readonly] {
+        background: linear-gradient(135deg, #fff5f5 0%, #ffe8e8 100%);
+        border-color: rgba(218, 60, 60, 0.25);
+        color: var(--theme-color);
+        font-family: GlacialIndifference-Bold, sans-serif;
+        font-weight: 700;
+        cursor: default;
+    }
+
+    .enquiry-form-input.error {
+        border-color: #ef4444;
+        box-shadow: 0 0 0 4px rgba(239, 68, 68, 0.08);
+        animation: inputShake 0.4s ease;
+    }
+
+    @keyframes inputShake {
+        0%, 100% { transform: translateX(0); }
+        20%, 60% { transform: translateX(-5px); }
+        40%, 80% { transform: translateX(5px); }
+    }
+
+    /* Row for dates */
+    .enquiry-form-row {
+        display: flex;
+        gap: 14px;
+    }
+
+    .enquiry-form-row .enquiry-form-group {
+        flex: 1;
+    }
+
+    /* ===== SUBMIT BUTTON ===== */
+    .enquiry-submit-btn {
+        width: 100%;
+        padding: 16px 30px;
+        margin-top: 10px;
+        font-size: 14px;
+        font-weight: 700;
+        font-family: 'Roboto', sans-serif;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        border-radius: 50px;
+        border: none;
+        cursor: pointer;
+        background: linear-gradient(135deg, var(--theme-color) 0%, #c62828 100%);
+        color: #ffffff;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 4px 15px rgba(218, 60, 60, 0.3);
+    }
+
+    .enquiry-submit-btn::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+        transition: left 0.6s ease;
+    }
+
+    .enquiry-submit-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 30px rgba(218, 60, 60, 0.45);
+    }
+
+    .enquiry-submit-btn:hover::before {
+        left: 100%;
+    }
+
+    .enquiry-submit-btn:active {
+        transform: translateY(-1px);
+        box-shadow: 0 4px 15px rgba(218, 60, 60, 0.3);
+    }
+
+    .enquiry-submit-btn .btn-text {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .enquiry-submit-btn .btn-text svg {
+        width: 16px;
+        height: 16px;
+        transition: transform 0.3s ease;
+    }
+
+    .enquiry-submit-btn:hover .btn-text svg {
+        transform: translateX(4px);
+    }
+
+    /* ===== SUCCESS STATE ===== */
+    .enquiry-success-state {
+        text-align: center;
+        padding: 50px 30px;
+        animation: successFadeIn 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    @keyframes successFadeIn {
+        from { opacity: 0; transform: scale(0.8) translateY(20px); }
+        to { opacity: 1; transform: scale(1) translateY(0); }
+    }
+
+    .enquiry-success-state .success-circle {
+        width: 85px;
+        height: 85px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #22c55e, #16a34a);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 24px;
+        box-shadow: 0 10px 40px rgba(34, 197, 94, 0.3);
+        animation: successPulse 2s ease-in-out infinite;
+    }
+
+    @keyframes successPulse {
+        0%, 100% { box-shadow: 0 10px 40px rgba(34, 197, 94, 0.3); transform: scale(1); }
+        50% { box-shadow: 0 15px 50px rgba(34, 197, 94, 0.45); transform: scale(1.03); }
+    }
+
+    .enquiry-success-state .success-circle svg {
+        width: 38px;
+        height: 38px;
+        color: #fff;
+        stroke-dasharray: 50;
+        stroke-dashoffset: 50;
+        animation: checkDraw 0.6s ease 0.3s forwards;
+    }
+
+    @keyframes checkDraw {
+        to { stroke-dashoffset: 0; }
+    }
+
+    .enquiry-success-state h3 {
+        color: #222;
+        font-family: 'Playfair Display', serif;
+        font-size: 26px;
+        margin-bottom: 8px;
+        line-height: 1.25em;
+    }
+
+    .enquiry-success-state p {
+        color: #555;
+        font-size: 16px;
+        font-family: GlacialIndifference-Regular, sans-serif;
+        margin-bottom: 28px;
+        line-height: 28px;
+    }
+
+    .enquiry-success-close {
+        display: inline-block;
+        padding: 14px 40px;
+        border-radius: 50px;
+        border: none;
+        background: linear-gradient(135deg, var(--theme-color) 0%, #c62828 100%);
+        color: #fff;
+        font-weight: 700;
+        font-size: 13px;
+        font-family: 'Roboto', sans-serif;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 4px 15px rgba(218, 60, 60, 0.3);
+    }
+
+    .enquiry-success-close:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 30px rgba(218, 60, 60, 0.45);
+    }
+
+    /* ===== DATE PICKER OVERRIDES ===== */
+    .ui-datepicker {
+        border-radius: 16px !important;
+        border: none !important;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.18) !important;
+        padding: 18px !important;
+        font-family: GlacialIndifference-Regular, sans-serif !important;
+        z-index: 100000 !important;
+    }
+
+    .ui-datepicker-header {
+        background: linear-gradient(135deg, var(--theme-color), #c62828) !important;
+        border-radius: 12px !important;
+        color: #fff !important;
+        padding: 14px !important;
+        border: none !important;
+    }
+
+    .ui-datepicker-title {
+        font-family: 'Playfair Display', serif !important;
+        font-weight: 700 !important;
+        font-size: 15px !important;
+        color: #fff !important;
+    }
+
+    .ui-datepicker-calendar th {
+        color: #888 !important;
+        font-weight: 600 !important;
+        font-size: 11px !important;
+        text-transform: uppercase !important;
+        padding: 8px 4px !important;
+    }
+
+    .ui-datepicker-calendar td {
+        padding: 3px !important;
+    }
+
+    .ui-datepicker-calendar td a,
+    .ui-datepicker-calendar td span {
+        border-radius: 10px !important;
+        transition: all 0.2s ease !important;
+        font-weight: 500 !important;
+        text-align: center !important;
+    }
+
+    .ui-datepicker-calendar td a:hover {
+        background: rgba(218, 60, 60, 0.08) !important;
+        color: var(--theme-color) !important;
+    }
+
+    .ui-datepicker-calendar td a.ui-state-active {
+        background: linear-gradient(135deg, var(--theme-color), #c62828) !important;
+        color: #fff !important;
+        font-weight: 700 !important;
+        box-shadow: 0 3px 12px rgba(218, 60, 60, 0.3) !important;
+    }
+
+    .ui-datepicker-prev, .ui-datepicker-next {
+        cursor: pointer !important;
+        border-radius: 8px !important;
+        transition: all 0.3s ease !important;
+        top: 8px !important;
+    }
+
+    .ui-datepicker-prev:hover, .ui-datepicker-next:hover {
+        background: rgba(255, 255, 255, 0.2) !important;
+    }
+
+    .ui-datepicker-prev .ui-icon,
+    .ui-datepicker-next .ui-icon {
+        filter: brightness(0) invert(1) !important;
+    }
+
+    /* ===== CENTER BUTTON ===== */
+    .link-btn {
+        text-align: center;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 576px) {
+        .enquiry-overlay {
+            padding: 10px;
+            align-items: flex-end;
+        }
+
+        .enquiry-modal {
+            max-height: 93vh;
+            border-radius: 24px 24px 0 0;
+        }
+
+        .enquiry-modal-header {
+            padding: 26px 22px 22px;
+            border-radius: 24px 24px 0 0;
+        }
+
+        .enquiry-modal-header h2 {
+            font-size: 22px;
+        }
+
+        .enquiry-modal-body {
+            padding: 22px 22px 28px;
+        }
+
+        .enquiry-form-row {
+            flex-direction: column;
+            gap: 0;
+        }
+    }
 
 
 

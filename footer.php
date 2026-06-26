@@ -7,11 +7,11 @@
                     <div class="col-lg-2 col-md-4 col-sm-6">
                         <div class="image gallery-overlay">
                             <div class="inner-box">
-                                <img src="assets/images/resource/footer-1.jpg" alt="">
+                                <img src="assets/images/Deluxe Room/front-view.jpeg" alt="">
                                 <div class="overlay-box">
                                     <div class="overlay-inner">
                                         <div class="content">
-                                            <a href="assets/images/resource/popup-image.jpg" class="lightbox-image link" data-fancybox="gallery"><span class="icon fas fa-eye"></span></a>
+                                            <a href="assets/images/Deluxe Room/front-view.jpeg" class="lightbox-image link" data-fancybox="gallery"><span class="icon fas fa-eye"></span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -21,11 +21,11 @@
                     <div class="col-lg-2 col-md-4 col-sm-6">
                         <div class="image gallery-overlay">
                             <div class="inner-box">
-                                <img src="assets/images/resource/footer-2.jpg" alt="">
+                                <img src="assets/images/Deluxe Room/inside-room.jpeg" alt="">
                                 <div class="overlay-box">
                                     <div class="overlay-inner">
                                         <div class="content">
-                                            <a href="assets/images/resource/popup-image.jpg" class="lightbox-image link" data-fancybox="gallery"><span class="icon fas fa-eye"></span></a>
+                                            <a href="assets/images/Deluxe Room/inside-room.jpeg" class="lightbox-image link" data-fancybox="gallery"><span class="icon fas fa-eye"></span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -35,11 +35,11 @@
                     <div class="col-lg-2 col-md-4 col-sm-6">
                         <div class="image gallery-overlay">
                             <div class="inner-box">
-                                <img src="assets/images/resource/footer-3.jpg" alt="">
+                                <img src="assets/images/Executive AC Cottage/inside-image.jpeg" alt="">
                                 <div class="overlay-box">
                                     <div class="overlay-inner">
                                         <div class="content">
-                                            <a href="assets/images/resource/popup-image.jpg" class="lightbox-image link" data-fancybox="gallery"><span class="icon fas fa-eye"></span></a>
+                                            <a href="assets/images/Executive AC Cottage/inside-image.jpeg" class="lightbox-image link" data-fancybox="gallery"><span class="icon fas fa-eye"></span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -49,11 +49,11 @@
                     <div class="col-lg-2 col-md-4 col-sm-6">
                         <div class="image gallery-overlay">
                             <div class="inner-box">
-                                <img src="assets/images/resource/footer-4.jpg" alt="">
+                                <img src="assets/images/Executive Rooms/room-inside.jpeg" alt="">
                                 <div class="overlay-box">
                                     <div class="overlay-inner">
                                         <div class="content">
-                                            <a href="assets/images/resource/popup-image.jpg" class="lightbox-image link" data-fancybox="gallery"><span class="icon fas fa-eye"></span></a>
+                                            <a href="assets/images/Executive Rooms/room-inside.jpeg" class="lightbox-image link" data-fancybox="gallery"><span class="icon fas fa-eye"></span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -63,11 +63,11 @@
                     <div class="col-lg-2 col-md-4 col-sm-6">
                         <div class="image gallery-overlay">
                             <div class="inner-box">
-                                <img src="assets/images/resource/footer-5.jpg" alt="">
+                                <img src="assets/images/Executive Rooms/view-outside.jpeg" alt="">
                                 <div class="overlay-box">
                                     <div class="overlay-inner">
                                         <div class="content">
-                                            <a href="assets/images/resource/popup-image.jpg" class="lightbox-image link" data-fancybox="gallery"><span class="icon fas fa-eye"></span></a>
+                                            <a href="assets/images/Executive Rooms/view-outside.jpeg" class="lightbox-image link" data-fancybox="gallery"><span class="icon fas fa-eye"></span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -77,11 +77,11 @@
                     <div class="col-lg-2 col-md-4 col-sm-6">
                         <div class="image gallery-overlay">
                             <div class="inner-box">
-                                <img src="assets/images/resource/footer-6.jpg" alt="">
+                                <img src="assets/images/Executive Rooms/Picture.jpeg" alt="">
                                 <div class="overlay-box">
                                     <div class="overlay-inner">
                                         <div class="content">
-                                            <a href="assets/images/resource/popup-image.jpg" class="lightbox-image link" data-fancybox="gallery"><span class="icon fas fa-eye"></span></a>
+                                            <a href="assets/images/Executive Rooms/Picture.jpeg" class="lightbox-image link" data-fancybox="gallery"><span class="icon fas fa-eye"></span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -96,7 +96,7 @@
                     <!--Column-->
                     <div class="column col-lg-4">
                         <div class="widget contact-widget">
-                            <div class="logo" style="margin-bottom: 20px;"><a href="index.php"><img src="assets/images/logo-dark.png" alt="Riverside Resort" style="max-height: 80px;"></a></div>
+                            <div class="logo" style="margin-bottom: 20px;"><a href="index.php"><img src="assets/images/logo.webp" alt="Riverside Resort" style="max-height: 80px;"></a></div>
                             <table>
                                 <tr>
                                     <td class="lebel">Tel :</td>
@@ -191,7 +191,6 @@
 
 </body>
 
-<!-- Mirrored from html.tonatheme.com/2023/bluebell/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 26 Jun 2026 05:38:40 GMT -->
 </html>
 
 
