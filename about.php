@@ -24,7 +24,7 @@
                         <div class="text-three">Enjoy an authentic stay where adventure meets comfort. Unwind by the river and savor local delicacies.</div>
                         <div class="author-info">
                             <div class="author-wrap">
-                                <div class="author-thumb"><img src="assets/images/resource/image-7.png" alt=""></div>
+                                <!-- <div class="author-thumb"><img src="assets/images/resource/image-7.png" alt=""></div> -->
                                 <div class="name">Alok Kumar Maharana</div>
                                 <div class="designation">Primary POC</div>
                             </div>
@@ -52,9 +52,9 @@
             </div>
             <div class="row">
                 <div class="col-lg-6 why-choose-us-block">
-                    <div class="image"><img src="assets/images/resource/image-21.jpg" alt=""></div>
+                    <div class="image"><img src="assets/images/bhitarkanika.webp" alt=""></div>
                     <div class="inner-box">
-                        <div class="image-block"><img src="assets/images/resource/image-22.jpg" alt=""></div>
+                        <div class="image-block"><img src="assets/images/sand-pebbles-bhitarkanika.webp" alt=""></div>
                         <div class="text-three"><span>1500 +</span> Visitors <br> Come Annually</div>
                     </div>
                 </div>
@@ -88,12 +88,11 @@
                         <h2 class="sec-title text-light">The Story Behind <br> Our Resort</h2>
                     </div>
                     <div class="text">Riverside Resort was founded with a deep passion for nature and a commitment to preserving the beauty of Bhitarkanika. We wanted to create a haven where travelers could connect with the wilderness without compromising on comfort.</div>
-                    <div class="image"><img src="assets/images/resource/image-80.jpg" alt=""></div>
+                    <div class="image"><img src="assets/images/Executive AC Cottage/Viewoutside.jpeg" alt=""></div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="image-two"><img src="assets/images/resource/image-81.jpg" alt=""></div>
+                    <div class="image-two"><img src="assets/images/about-3.webp" alt=""></div>
                     <div class="text-two">Our resort is built to blend seamlessly into the environment. From morning boat rides to evening strolls by the river, every moment here is designed to help you unwind and appreciate the rich biodiversity around you.</div>
-                    <div class="link-btn"><a href="about.php" class="view-all-btn"><span>Read More</span></a></div>
                 </div>
             </div>
         </div>

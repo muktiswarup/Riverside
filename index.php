@@ -248,9 +248,9 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="image-block">
-                        <div class="image"><img src="assets/images/resource/image-7.jpg" alt=""></div>
+                        <div class="image"><img src="assets/images/hotel.webp" alt=""></div>
                         <div class="text-end">
-                            <div class="image-two img_hover_1"><img src="assets/images/resource/image-36.jpg" alt=""></div>
+                            <div class="image-two img_hover_1"><img src="assets/images/food.webp" alt=""></div>
                         </div>
                         <div class="text-one">Fresh food</div>
                         <div class="text-two">restaurant</div>
