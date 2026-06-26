@@ -49,7 +49,7 @@
                         <div class="overlay-box">
                             <div class="overlay-inner">
                                 <div class="content">
-                                    <a href="assets/images/resource/popup-image.jpg" class="lightbox-image link" data-fancybox="gallery"><span class="icon fas fa-eye"></span></a>
+                                    <a href="assets/images/gallery/3.jpeg" class="lightbox-image link" data-fancybox="gallery"><span class="icon fas fa-eye"></span></a>
                                 </div>
                             </div>
                         </div>
@@ -64,7 +64,7 @@
                         <div class="overlay-box">
                             <div class="overlay-inner">
                                 <div class="content">
-                                    <a href="assets/images/resource/popup-image.jpg" class="lightbox-image link" data-fancybox="gallery"><span class="icon fas fa-eye"></span></a>
+                                    <a href="assets/images/gallery/4.jpeg" class="lightbox-image link" data-fancybox="gallery"><span class="icon fas fa-eye"></span></a>
                                 </div>
                             </div>
                         </div>
@@ -79,7 +79,7 @@
                         <div class="overlay-box">
                             <div class="overlay-inner">
                                 <div class="content">
-                                    <a href="assets/images/resource/popup-image.jpg" class="lightbox-image link" data-fancybox="gallery"><span class="icon fas fa-eye"></span></a>
+                                    <a href="assets/images/gallery/5.jpeg" class="lightbox-image link" data-fancybox="gallery"><span class="icon fas fa-eye"></span></a>
                                 </div>
                             </div>
                         </div>
@@ -94,7 +94,7 @@
                         <div class="overlay-box">
                             <div class="overlay-inner">
                                 <div class="content">
-                                    <a href="assets/images/resource/popup-image.jpg" class="lightbox-image link" data-fancybox="gallery"><span class="icon fas fa-eye"></span></a>
+                                    <a href="assets/images/gallery/1.jpeg" class="lightbox-image link" data-fancybox="gallery"><span class="icon fas fa-eye"></span></a>
                                 </div>
                             </div>
                         </div>
@@ -109,7 +109,7 @@
                         <div class="overlay-box">
                             <div class="overlay-inner">
                                 <div class="content">
-                                    <a href="assets/images/resource/popup-image.jpg" class="lightbox-image link" data-fancybox="gallery"><span class="icon fas fa-eye"></span></a>
+                                    <a href="assets/images/gallery/6.jpeg" class="lightbox-image link" data-fancybox="gallery"><span class="icon fas fa-eye"></span></a>
                                 </div>
                             </div>
                         </div>
@@ -124,7 +124,7 @@
                         <div class="overlay-box">
                             <div class="overlay-inner">
                                 <div class="content">
-                                    <a href="assets/images/resource/popup-image.jpg" class="lightbox-image link" data-fancybox="gallery"><span class="icon fas fa-eye"></span></a>
+                                    <a href="assets/images/gallery/7.jpeg" class="lightbox-image link" data-fancybox="gallery"><span class="icon fas fa-eye"></span></a>
                                 </div>
                             </div>
                         </div>
@@ -139,7 +139,7 @@
                         <div class="overlay-box">
                             <div class="overlay-inner">
                                 <div class="content">
-                                    <a href="assets/images/resource/popup-image.jpg" class="lightbox-image link" data-fancybox="gallery"><span class="icon fas fa-eye"></span></a>
+                                    <a href="assets/images/gallery/8.jpeg" class="lightbox-image link" data-fancybox="gallery"><span class="icon fas fa-eye"></span></a>
                                 </div>
                             </div>
                         </div>
@@ -154,7 +154,7 @@
                         <div class="overlay-box">
                             <div class="overlay-inner">
                                 <div class="content">
-                                    <a href="assets/images/resource/popup-image.jpg" class="lightbox-image link" data-fancybox="gallery"><span class="icon fas fa-eye"></span></a>
+                                    <a href="assets/images/gallery/9.jpeg" class="lightbox-image link" data-fancybox="gallery"><span class="icon fas fa-eye"></span></a>
                                 </div>
                             </div>
                         </div>
@@ -169,7 +169,7 @@
                         <div class="overlay-box">
                             <div class="overlay-inner">
                                 <div class="content">
-                                    <a href="assets/images/resource/popup-image.jpg" class="lightbox-image link" data-fancybox="gallery"><span class="icon fas fa-eye"></span></a>
+                                    <a href="assets/images/gallery/10.jpeg" class="lightbox-image link" data-fancybox="gallery"><span class="icon fas fa-eye"></span></a>
                                 </div>
                             </div>
                         </div>
@@ -184,7 +184,7 @@
                         <div class="overlay-box">
                             <div class="overlay-inner">
                                 <div class="content">
-                                    <a href="assets/images/resource/popup-image.jpg" class="lightbox-image link" data-fancybox="gallery"><span class="icon fas fa-eye"></span></a>
+                                    <a href="assets/images/gallery/11.jpeg" class="lightbox-image link" data-fancybox="gallery"><span class="icon fas fa-eye"></span></a>
                                 </div>
                             </div>
                         </div>
@@ -199,7 +199,7 @@
                         <div class="overlay-box">
                             <div class="overlay-inner">
                                 <div class="content">
-                                    <a href="assets/images/resource/popup-image.jpg" class="lightbox-image link" data-fancybox="gallery"><span class="icon fas fa-eye"></span></a>
+                                    <a href="assets/images/gallery/12.jpeg" class="lightbox-image link" data-fancybox="gallery"><span class="icon fas fa-eye"></span></a>
                                 </div>
                             </div>
                         </div>
@@ -214,7 +214,7 @@
                         <div class="overlay-box">
                             <div class="overlay-inner">
                                 <div class="content">
-                                    <a href="assets/images/resource/popup-image.jpg" class="lightbox-image link" data-fancybox="gallery"><span class="icon fas fa-eye"></span></a>
+                                    <a href="assets/images/gallery/13.jpeg" class="lightbox-image link" data-fancybox="gallery"><span class="icon fas fa-eye"></span></a>
                                 </div>
                             </div>
                         </div>
@@ -229,7 +229,7 @@
                         <div class="overlay-box">
                             <div class="overlay-inner">
                                 <div class="content">
-                                    <a href="assets/images/resource/popup-image.jpg" class="lightbox-image link" data-fancybox="gallery"><span class="icon fas fa-eye"></span></a>
+                                    <a href="assets/images/gallery/14.jpeg" class="lightbox-image link" data-fancybox="gallery"><span class="icon fas fa-eye"></span></a>
                                 </div>
                             </div>
                         </div>
@@ -244,7 +244,7 @@
                         <div class="overlay-box">
                             <div class="overlay-inner">
                                 <div class="content">
-                                    <a href="assets/images/resource/popup-image.jpg" class="lightbox-image link" data-fancybox="gallery"><span class="icon fas fa-eye"></span></a>
+                                    <a href="assets/images/gallery/15.jpeg" class="lightbox-image link" data-fancybox="gallery"><span class="icon fas fa-eye"></span></a>
                                 </div>
                             </div>
                         </div>
@@ -259,7 +259,7 @@
                         <div class="overlay-box">
                             <div class="overlay-inner">
                                 <div class="content">
-                                    <a href="assets/images/resource/popup-image.jpg" class="lightbox-image link" data-fancybox="gallery"><span class="icon fas fa-eye"></span></a>
+                                    <a href="assets/images/gallery/17.jpeg" class="lightbox-image link" data-fancybox="gallery"><span class="icon fas fa-eye"></span></a>
                                 </div>
                             </div>
                         </div>
@@ -274,7 +274,7 @@
                         <div class="overlay-box">
                             <div class="overlay-inner">
                                 <div class="content">
-                                    <a href="assets/images/resource/popup-image.jpg" class="lightbox-image link" data-fancybox="gallery"><span class="icon fas fa-eye"></span></a>
+                                    <a href="assets/images/gallery/18.jpeg" class="lightbox-image link" data-fancybox="gallery"><span class="icon fas fa-eye"></span></a>
                                 </div>
                             </div>
                         </div>
@@ -289,7 +289,7 @@
                         <div class="overlay-box">
                             <div class="overlay-inner">
                                 <div class="content">
-                                    <a href="assets/images/resource/popup-image.jpg" class="lightbox-image link" data-fancybox="gallery"><span class="icon fas fa-eye"></span></a>
+                                    <a href="assets/images/gallery/19.jpeg" class="lightbox-image link" data-fancybox="gallery"><span class="icon fas fa-eye"></span></a>
                                 </div>
                             </div>
                         </div>
@@ -304,7 +304,7 @@
                         <div class="overlay-box">
                             <div class="overlay-inner">
                                 <div class="content">
-                                    <a href="assets/images/resource/popup-image.jpg" class="lightbox-image link" data-fancybox="gallery"><span class="icon fas fa-eye"></span></a>
+                                    <a href="assets/images/gallery/20.jpeg" class="lightbox-image link" data-fancybox="gallery"><span class="icon fas fa-eye"></span></a>
                                 </div>
                             </div>
                         </div>
@@ -319,7 +319,7 @@
                         <div class="overlay-box">
                             <div class="overlay-inner">
                                 <div class="content">
-                                    <a href="assets/images/resource/popup-image.jpg" class="lightbox-image link" data-fancybox="gallery"><span class="icon fas fa-eye"></span></a>
+                                    <a href="assets/images/gallery/21.jpeg" class="lightbox-image link" data-fancybox="gallery"><span class="icon fas fa-eye"></span></a>
                                 </div>
                             </div>
                         </div>
@@ -334,7 +334,7 @@
                         <div class="overlay-box">
                             <div class="overlay-inner">
                                 <div class="content">
-                                    <a href="assets/images/resource/popup-image.jpg" class="lightbox-image link" data-fancybox="gallery"><span class="icon fas fa-eye"></span></a>
+                                    <a href="assets/images/gallery/24.jpeg" class="lightbox-image link" data-fancybox="gallery"><span class="icon fas fa-eye"></span></a>
                                 </div>
                             </div>
                         </div>
@@ -349,7 +349,7 @@
                         <div class="overlay-box">
                             <div class="overlay-inner">
                                 <div class="content">
-                                    <a href="assets/images/resource/popup-image.jpg" class="lightbox-image link" data-fancybox="gallery"><span class="icon fas fa-eye"></span></a>
+                                    <a href="assets/images/gallery/25.jpeg" class="lightbox-image link" data-fancybox="gallery"><span class="icon fas fa-eye"></span></a>
                                 </div>
                             </div>
                         </div>
