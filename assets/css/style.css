@@ -590,7 +590,7 @@ img {
 
 .main-header .header-upper .inner-container {
     position: relative;
-    min-height: 80px;
+    min-height: 60px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -1088,6 +1088,27 @@ img {
     padding: 0 60px;
 }
 
+header.main-header.header-style-one .sticky-header {
+    background: transparent;
+    box-shadow: none;
+    /* padding-top: 25px; */
+}
+
+header.main-header.header-style-one.fixed-header .sticky-header {
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: none;
+}
+
+header.main-header.header-style-one .sticky-header .header-upper .inner-container {
+    background: rgba(255, 255, 255, 0.85);
+    box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.12);
+}
+
+header.main-header.header-style-one .sticky-header .logo img,
+header.main-header.header-style-one .header-upper .logo img {
+    filter: grayscale(100%) brightness(0);
+}
+
 /* Header style two */
 
 .main-header.header-style-two .auto-container {
@@ -1323,9 +1344,8 @@ header.main-header.header-style-two {
     position: fixed;
     right: 0;
     top: 0;
-    width: 300px;
-    padding-right: 30px;
-    max-width: 100%;
+    width: 280px;
+    max-width: 85%;
     height: 100%;
     opacity: 0;
     visibility: hidden;
@@ -9879,6 +9899,31 @@ section.banner-section:before {
         font-family: GlacialIndifference-Bold, sans-serif;
         font-weight: 700;
         cursor: default;
+    }
+
+    .enquiry-form-select {
+        cursor: pointer;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 16px center;
+        padding-right: 42px;
+    }
+
+    .enquiry-form-select.enquiry-form-input--locked,
+    .enquiry-form-select:disabled {
+        background: linear-gradient(135deg, #fff5f5 0%, #ffe8e8 100%);
+        border-color: rgba(218, 60, 60, 0.25);
+        color: var(--theme-color);
+        font-family: GlacialIndifference-Bold, sans-serif;
+        font-weight: 700;
+        cursor: default;
+        opacity: 1;
+        background-image: none;
+        padding-right: 18px;
+    }
+
+    .enquiry-form-select option[disabled] {
+        color: #adb5bd;
     }
 
     .enquiry-form-input.error {

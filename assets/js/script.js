@@ -18,7 +18,7 @@
 
 	$( ".datepicker" ).datepicker();
 
-	$('select').niceSelect();
+	$('select').not('#enquiryRoomType').niceSelect();
 
 	function dynamicCurrentMenuClass(selector) {
         let FileName = window.location.href.split('/').reverse()[0];
@@ -642,6 +642,8 @@
     (function() {
         // Cache DOM elements
         var overlay = document.getElementById('enquiryOverlay');
+        if (!overlay) return;
+
         var modal = document.getElementById('enquiryModal');
         var closeBtn = document.getElementById('enquiryCloseBtn');
         var modalBody = document.getElementById('enquiryModalBody');
@@ -651,13 +653,27 @@
         // Store original form HTML for reset
         var originalFormHTML = modalBody.innerHTML;
 
+        function setRoomTypeField(roomType) {
+            roomTypeInput = document.getElementById('enquiryRoomType');
+            if (!roomTypeInput) return;
+
+            if (roomType) {
+                roomTypeInput.value = roomType;
+                roomTypeInput.disabled = true;
+                roomTypeInput.classList.add('enquiry-form-input--locked');
+            } else {
+                roomTypeInput.value = '';
+                roomTypeInput.disabled = false;
+                roomTypeInput.classList.remove('enquiry-form-input--locked');
+            }
+        }
+
         // ---- OPEN MODAL ----
         window.openEnquiryModal = function(roomType) {
-            if (roomTypeInput) {
-                roomTypeInput.value = roomType;
-            }
+            setRoomTypeField(roomType || '');
             overlay.classList.add('active');
             document.body.style.overflow = 'hidden';
+            initDatePickers();
         };
 
         // ---- CLOSE MODAL ----
@@ -707,6 +723,15 @@
             });
         });
 
+        var headerEnquireBtns = document.querySelectorAll('.header-enquire-btn');
+        headerEnquireBtns.forEach(function(btn) {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                window.openEnquiryModal();
+            });
+        });
+
         // ---- FORM SUBMISSION ----
         function bindFormSubmit() {
             var currentForm = document.getElementById('enquiryForm');
@@ -721,6 +746,8 @@
                 var checkin = document.getElementById('enquiryCheckin').value.trim();
                 var checkout = document.getElementById('enquiryCheckout').value.trim();
                 var guests = document.getElementById('enquiryGuests').value;
+                var roomTypeEl = document.getElementById('enquiryRoomType');
+                var roomType = roomTypeEl ? roomTypeEl.value : '';
 
                 // Highlight empty fields
                 var hasError = false;
@@ -730,7 +757,8 @@
                     { id: 'enquiryPhone', val: phone },
                     { id: 'enquiryCheckin', val: checkin },
                     { id: 'enquiryCheckout', val: checkout },
-                    { id: 'enquiryGuests', val: guests }
+                    { id: 'enquiryGuests', val: guests },
+                    { id: 'enquiryRoomType', val: roomType }
                 ];
 
                 fields.forEach(function(field) {
@@ -759,7 +787,7 @@
                         '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>' +
                     '</div>' +
                     '<h3>Enquiry Submitted!</h3>' +
-                    '<p>Thank you for your interest in our ' + (roomTypeInput ? roomTypeInput.value : 'room') + '.<br>Our team will contact you within 24 hours.</p>' +
+                    '<p>Thank you for your interest in our ' + roomType + '.<br>Our team will contact you within 24 hours.</p>' +
                     '<button class="enquiry-success-close" id="successCloseBtn">Close</button>' +
                 '</div>';
 

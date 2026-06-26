@@ -38,7 +38,7 @@
             <div class="auto-container">
                 <div class="inner-container">
                     <!--Logo-->
-                        <div class="logo" style="margin-bottom: 20px;"><a href="index.php"><img src="assets/images/logo-dark.png" alt="Riverside Resort" style="max-height: 80px;"></a></div>
+                        <div class="logo"><a href="index.php"><img src="assets/images/logo.webp" alt="Riverside Resort" style="max-height: 80px;"></a></div>
                     <!--Nav Box-->
                     <div class="nav-outer">
                         <!--Mobile Navigation Toggler-->
@@ -56,11 +56,10 @@
                                 </ul>
                             </div>
                         </nav>
-                        <div class="search-toggler"><i class="far fa-search"></i></div>
                     </div>
                     <div class="right-column">
                         <div class="navbar-right">
-                            <div class="link-btn"><a href="booking-reservation.php" class="theme-btn btn-style-one">Reservation</a></div>
+                            <div class="link-btn"><a href="javascript:void(0)" class="theme-btn btn-style-one header-enquire-btn" onclick="openEnquiryModal()"><span>Enquire Now</span></a></div>
                         </div>
                     </div>                     
                 </div>
@@ -74,22 +73,21 @@
                 <div class="auto-container">
                     <div class="inner-container">
                         <!--Logo-->
-                        <div class="logo"><a href="index.php"><img src="assets/images/logo-dark.png" alt="Riverside Resort" style="max-height: 80px;"></a></div>
+                        <div class="logo"><a href="index.php"><img src="assets/images/logo.webp" alt="Riverside Resort" style="max-height: 50px;"></a></div>
                         <!--Nav Box-->
                         <div class="nav-outer">
                             <!--Mobile Navigation Toggler-->
                             <div class="mobile-nav-toggler"><img src="assets/images/icons/icon-bar.png" alt=""></div>
-    
+
                             <!-- Main Menu -->
                             <nav class="main-menu navbar-expand-md navbar-light">
                             </nav>
-                            <div class="search-toggler"><i class="far fa-search"></i></div>
                         </div>
                         <div class="right-column">
                             <div class="navbar-right">
-                                <div class="link-btn"><a href="booking-reservation.php" class="theme-btn btn-style-one">Reservation</a></div>
+                                <div class="link-btn"><a href="javascript:void(0)" class="theme-btn btn-style-one header-enquire-btn" onclick="openEnquiryModal()"><span>Enquire Now</span></a></div>
                             </div>
-                        </div>                     
+                        </div>
                     </div>
                 </div>
             </div>
@@ -140,3 +138,5 @@
             </div>
         </div>
     </div>
+
+<?php include 'enquiry-modal.php'; ?>
