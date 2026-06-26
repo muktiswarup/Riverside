@@ -50,7 +50,7 @@
                                 <ul class="navigation">
                                     <li><a href="index.php">Home</a></li>
                                     <li><a href="about.php">About Us</a></li>
-                                    <li><a href="room-grid.php">Rooms</a></li>
+                                    <li><a href="rooms.php">Rooms</a></li>
                                     <li><a href="gallery.php">Gallery</a></li>
                                     <li><a href="contact.php">Contact</a></li>
                                 </ul>
@@ -60,7 +60,7 @@
                     </div>
                     <div class="right-column">
                         <div class="navbar-right">
-                            <div class="link-btn"><a href="booking-reservation.php" class="theme-btn btn-style-one">Reservation</a></div>
+                            <div class="link-btn"><a href="" class="theme-btn btn-style-one">Reservation</a></div>
                         </div>
                     </div>                     
                 </div>

@@ -287,7 +287,7 @@
                 <div class="col-lg-7">
                     <div class="image-block">
                         <div class="image"><img src="assets/images/resource/image-9.jpg" alt=""></div>
-                        <div class="image-two img_hover_1"><img src="assets/images/resource/image-38.jpg" alt=""></div>
+                        <div class="image-two img_hover_1"><img src="assets/images/river.webp" alt=""></div>
                     </div>
                 </div>
             </div>
